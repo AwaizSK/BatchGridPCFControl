@@ -1,0 +1,20 @@
+.xg { font: 13px "Segoe UI", sans-serif; overflow: auto; max-height: 70vh; }
+.xg-bar { display: flex; gap: 8px; align-items: center; padding: 6px; position: sticky; top: 0; background: #fff; z-index: 2; }
+.xg-bar button { padding: 4px 12px; }
+.xg-bar button.primary { background: #0078d4; color: #fff; border: 0; }
+.xg-bar button:disabled { opacity: .5; cursor: not-allowed; }
+.xg .hint { color: #605e5c; }
+.xg table { border-collapse: collapse; width: 100%; }
+.xg th { position: sticky; top: 40px; background: #f3f2f1; text-align: left; padding: 4px 6px; z-index: 1; }
+.xg td { border: 1px solid #e1dfdd; padding: 0; }
+.xg .cell { width: 100%; box-sizing: border-box; border: 0; padding: 4px 6px; background: transparent; font: inherit; }
+.xg .cell:focus { outline: 2px solid #0078d4; outline-offset: -2px; }
+.xg .cell-error { outline: 2px solid #d13438; outline-offset: -2px; background: #fde7e9; }
+.xg .srv-error { background: #fde7e9; }
+.xg .ro { background: #faf9f8; padding: 4px 6px; color: #605e5c; }
+.xg .ind { width: 22px; text-align: center; color: #0078d4; }
+.row-new td { background: #f1faf1; }
+.row-updated td { background: #fffbe6; }
+.row-deleted td { text-decoration: line-through; opacity: .5; }
+.xg-log { color: #a4262c; background: #fde7e9; margin: 4px 0; padding: 8px 24px; }
+.xg-info { background: #dff6dd; padding: 8px 12px; margin: 4px 0; }

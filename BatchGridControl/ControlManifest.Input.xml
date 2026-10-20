@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Contoso" constructor="BatchGridControl" version="1.0.0"
+           display-name-key="Batch Entry Grid" description-key="Excel-style bulk entry grid with atomic batch save"
+           control-type="virtual">
+    <external-service-usage enabled="false" />
+    <data-set name="lines" display-name-key="Lines" />
+    <property name="gridConfig" display-name-key="Grid configuration (JSON)"
+              description-key="Columns, lookups and parent relationship"
+              of-type="Multiple" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.14.0" />
+      <css path="css/BatchGrid.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
